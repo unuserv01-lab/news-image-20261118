@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { width: 1024px; height: 1024px; background: #fff; color: #111;
+         font-family: Georgia, 'Times New Roman', serif; overflow: hidden; }
+  .page { width: 1024px; height: 1024px; padding: 14px 22px 10px; }
+  /* Masthead */
+  .mast { text-align: center; border-bottom: 5px double #111; padding-bottom: 6px; }
+  .mast h1 { font-size: 58px; letter-spacing: 2px; line-height: 1; font-weight: 900; }
+  .mast .dateline { display: flex; justify-content: space-between; margin-top: 5px;
+    font-family: Arial, Helvetica, sans-serif; font-size: 15px; font-weight: 700; letter-spacing: 1px; }
+  .mast .dateline .mid { color: #b30000; }
+  /* Lead */
+  .lead { text-align: center; padding: 8px 0 6px; border-bottom: 2px solid #111; }
+  .lead h2 { font-size: 50px; line-height: 0.95; font-weight: 900; color: #b30000; letter-spacing: 1px; }
+  .lead p { font-size: 21px; font-style: italic; margin-top: 4px; }
+  /* Second row */
+  .second { display: flex; gap: 18px; padding: 7px 0; border-bottom: 2px solid #111; }
+  .second .col { flex: 1; }
+  .second .col + .col { border-left: 1px solid #999; padding-left: 18px; }
+  .second h3 { font-size: 26px; line-height: 1.05; font-weight: 900; }
+  .second p { font-size: 15px; margin-top: 3px; line-height: 1.25; }
+  /* Map */
+  .mapwrap { padding: 6px 0 2px; border-bottom: 2px solid #111; }
+  .mapwrap .maptitle { font-family: Arial, Helvetica, sans-serif; font-size: 12px; font-weight: 700;
+    letter-spacing: 2px; color: #555; margin-bottom: 2px; }
+  .mapwrap svg { display: block; width: 980px; height: 128px; }
+  /* Market strip */
+  .markets { font-family: Arial, Helvetica, sans-serif; font-size: 15px; font-weight: 700;
+    padding: 6px 0; border-bottom: 2px solid #111; text-align: center; letter-spacing: 0.5px; }
+  .markets .down { color: #b30000; }
+  .markets .up { color: #0a6e0a; }
+  /* Grid */
+  .grid { display: flex; gap: 16px; padding-top: 8px; }
+  .grid .gcol { flex: 1; }
+  .grid .gcol + .gcol { border-left: 1px solid #bbb; padding-left: 16px; }
+  .sec { font-family: Arial, Helvetica, sans-serif; font-size: 11px; font-weight: 800;
+    letter-spacing: 2px; color: #b30000; margin: 6px 0 2px; }
+  .sec:first-child { margin-top: 0; }
+  .item { font-size: 12.5px; line-height: 1.22; margin-bottom: 4px; }
+  .item b { font-weight: 900; }
+  .item span { font-size: 12.5px; }
+  /* Footer */
+  .foot { margin-top: 8px; border-top: 2px solid #111; padding-top: 5px; text-align: center;
+    font-family: Arial, Helvetica, sans-serif; font-size: 11.5px; letter-spacing: 1px; color: #444; }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <div class="mast">
+    <h1>THE WORLD TODAY</h1>
+    <div class="dateline">
+      <span>WEDNESDAY, NOVEMBER 18, 2026</span>
+      <span class="mid">45 STORIES &middot; 6 CONTINENTS</span>
+      <span>ONE DAY, ONE PAGE</span>
+    </div>
+  </div>
+
+  <div class="lead">
+    <h2>GULF WAR WIDENS</h2>
+    <p>US strikes Qeshm, Iran hits Bahrain and Kuwait</p>
+  </div>
+
+  <div class="second">
+    <div class="col">
+      <h3>TRUMP&ndash;XI&ndash;PUTIN EVE</h3>
+      <p>Three leaders meet tomorrow in Shenzhen, at APEC &mdash; the first trilateral summit in history.</p>
+    </div>
+    <div class="col">
+      <h3>UKRAINE HITS KERCH BRIDGE AGAIN</h3>
+      <p>Span falls into the strait after a second day of drone and missile strikes on Crimea.</p>
+    </div>
+  </div>
+
+  <div class="mapwrap">
+    <div class="maptitle">THE DAY ON THE MAP &mdash; GULF &middot; SHENZHEN &middot; CRIMEA &middot; ALASKA &middot; CONGO &middot; COOK ISLANDS</div>
+    <svg viewBox="0 0 980 128" xmlns="http://www.w3.org/2000/svg">
+      <!-- stylised world map -->
+      <g fill="#d8d8d8" stroke="#999" stroke-width="1">
+        <path d="M35,42 L115,14 L205,20 L245,42 L220,70 L180,84 L145,102 L105,92 L65,78 L32,60 Z"/>
+        <path d="M190,100 L245,98 L258,116 L238,128 L205,126 L190,114 Z"/>
+        <path d="M425,34 L470,22 L505,36 L492,58 L455,60 L430,50 Z"/>
+        <path d="M425,62 L478,52 L514,72 L504,108 L466,128 L440,106 L424,82 Z"/>
+        <path d="M515,30 L650,12 L770,26 L800,56 L740,84 L640,96 L565,84 L525,58 Z"/>
+        <path d="M685,102 L760,96 L782,114 L740,126 L690,120 Z"/>
+        <path d="M118,10 L145,4 L158,16 L135,24 Z"/>
+      </g>
+      <!-- markers -->
+      <g fill="#b30000">
+        <circle cx="580" cy="66" r="5"/><circle cx="695" cy="58" r="5"/><circle cx="500" cy="48" r="5"/>
+        <circle cx="88" cy="32" r="5"/><circle cx="460" cy="96" r="5"/><circle cx="880" cy="108" r="5"/>
+      </g>
+      <g font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="700" fill="#111">
+        <text x="590" y="62">GULF</text>
+        <text x="705" y="54">SHENZHEN</text>
+        <text x="508" y="44">KERCH</text>
+        <text x="96" y="28">ALASKA</text>
+        <text x="468" y="92">CONGO</text>
+        <text x="790" y="104">COOK IS.</text>
+      </g>
+    </svg>
+  </div>
+
+  <div class="markets">
+    MARKETS: DOW <span class="down">&minus;850</span> &middot; S&amp;P LOWEST SINCE JULY &middot; NVIDIA $115.8BN <span class="up">+103%</span> &middot; ANTHROPIC IPO PRICES TODAY
+  </div>
+
+  <div class="grid">
+    <div class="gcol">
+      <div class="sec">WORLD</div>
+      <div class="item"><b>Democrats flip Alaska:</b> <span>Peltola beats Sullivan; Senate 56 seats.</span></div>
+      <div class="item"><b>Ebola in Congo doubles:</b> <span>11,000 cases, 5,400 dead.</span></div>
+      <div class="item"><b>US loses measles-free status</b> <span>after 26 years.</span></div>
+      <div class="item"><b>Cyclone Xavier, Category 5,</b> <span>nears Cook Islands.</span></div>
+      <div class="item"><b>Cold kills in Gaza tents</b> <span>as four nations demand aid access.</span></div>
+      <div class="item"><b>World Court to rule tomorrow</b> <span>on Myanmar genocide case.</span></div>
+      <div class="item"><b>Russian military plane crashes</b> <span>in Siberia, 19 dead.</span></div>
+      <div class="item"><b>6.0 quake hits Papua New Guinea;</b> <span>5.3 shakes Romania.</span></div>
+      <div class="item"><b>France: fourth weekend</b> <span>of cost-of-living protests.</span></div>
+      <div class="item"><b>Isolated Indigenous group</b> <span>emerges from Brazilian Amazon.</span></div>
+      <div class="item"><b>Costa Rican journalist</b> <span>probing drug trafficking killed.</span></div>
+      <div class="item"><b>Mongolia&rsquo;s president resigns</b> <span>amid railway scandal.</span></div>
+      <div class="sec">SCIENCE</div>
+      <div class="item"><b>Voyager 1 reaches</b> <span>one light-day from Earth.</span></div>
+    </div>
+    <div class="gcol">
+      <div class="sec">CONFLICT</div>
+      <div class="item"><b>NSA outage deepens Wall Street slide:</b> <span>Dow down ~850.</span></div>
+      <div class="item"><b>Kahana takes Knesset Speaker;</b> <span>Herzog taps Eisenkot.</span></div>
+      <div class="item"><b>UN: 372 civilians killed</b> <span>in Ukraine in October.</span></div>
+      <div class="item"><b>Sudan: 2,230+ civilian deaths;</b> <span>1,630 by drones.</span></div>
+      <div class="item"><b>US details $12bn in Venezuelan oil revenue.</b></div>
+      <div class="item"><b>Guatemala electoral prosecutor</b> <span>wounded in attack.</span></div>
+      <div class="item"><b>Asif Merchant gets 27 years</b> <span>for plot to kill Trump.</span></div>
+      <div class="item"><b>St Kitts winds down</b> <span>citizenship-for-sale.</span></div>
+      <div class="item"><b>Australia sanctions three people,</b> <span>four entities.</span></div>
+      <div class="item"><b>Serbia MiG-29 crash</b> <span>kills pilot.</span></div>
+      <div class="item"><b>Japan protests</b> <span>Russian airspace violation.</span></div>
+      <div class="sec">DIPLOMACY</div>
+      <div class="item"><b>Xi opens APEC in Shenzhen,</b> <span>urges AI cooperation.</span></div>
+      <div class="item"><b>Quad meets in Manila:</b> <span>minerals pact, trade deal.</span></div>
+      <div class="item"><b>ASEAN summit wraps in Manila</b> <span>amid oil shortages.</span></div>
+    </div>
+    <div class="gcol">
+      <div class="sec">TECH</div>
+      <div class="item"><b>Nvidia doubles revenue to $115.8bn;</b> <span>board won&rsquo;t bring back Huang.</span></div>
+      <div class="item"><b>US closes AI-chip loophole;</b> <span>Nvidia halts H200 to China.</span></div>
+      <div class="item"><b>Waymo banned from freeways</b> <span>after California crackdown.</span></div>
+      <div class="item"><b>Cyberattack disables supermarket freezers</b> <span>in seven EU countries.</span></div>
+      <div class="item"><b>FAA pauses new routers</b> <span>after ground stop.</span></div>
+      <div class="item"><b>South Korea offers $75,000 bounties</b> <span>for AI exam cheats.</span></div>
+      <div class="item"><b>Thailand orders clean water</b> <span>after arsenic from Myanmar mines.</span></div>
+      <div class="item"><b>Microsoft Ignite:</b> <span>new Copilot, MAI Code 2, Agent 365.</span></div>
+      <div class="item"><b>Anthropic IPO prices today;</b> <span>Nasdaq debut as &lsquo;ANT&rsquo; tomorrow.</span></div>
+      <div class="item"><b>Hassabis raises $5bn</b> <span>for AI drug discovery.</span></div>
+      <div class="sec">SPORT</div>
+      <div class="item"><b>Haaland penalty sends Norway past Denmark 3&ndash;2.</b></div>
+      <div class="item"><b>Jordan beats Australia 2&ndash;0 in Doha.</b></div>
+      <div class="item"><b>El Salvador beats Saint Martin 3&ndash;1.</b></div>
+      <div class="item"><b>Forest thrash Sunderland 5&ndash;0;</b> <span>Leeds slide into drop zone.</span></div>
+      <div class="item"><b>Pope Leo XIV: no need to hate each other.</b></div>
+    </div>
+  </div>
+
+  <div class="foot">THE WORLD TODAY &mdash; WEDNESDAY, NOVEMBER 18, 2026 &middot; 45 STORIES FROM SIX CONTINENTS &middot; THE DAY&rsquo;S NEWS IN ONE IMAGE</div>
+
+</div>
+</body>
+</html>
